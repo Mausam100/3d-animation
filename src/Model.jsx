@@ -51,12 +51,12 @@ export default function Model(props) {
         <group
           name="Sketchfab_model"
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={1.2}
+          scale={0.8}
         >
           <group name="root">
             <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
               <group>
-                <Text fontSize={0.4} position={[0, 0, 0]}>
+                <Text fontSize={0.3} position={[0, 0, 0]}>
                   Follow Me😊
                 </Text>
               </group>

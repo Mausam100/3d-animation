@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Scene from "./Scene";
 import Model from "./Model";
 import { Canvas } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 
 function App() {
   const modelTriggerRef = useRef();
@@ -23,6 +23,7 @@ function App() {
           <directionalLight intensity={3} position={[0, 3, 2]} />
           <Environment preset="city" />
           <Model triggerRef={modelTriggerRef} />
+          <OrbitControls enableZoom={false} />
         </Canvas>
       </div>
     </main>
